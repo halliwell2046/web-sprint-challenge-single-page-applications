@@ -21,16 +21,16 @@ function PizzaOrder(props) {
 
     return(
         <div>
-            <form onSubmit={onSubmit}>
+            <form className="form" onSubmit={onSubmit}>
                 <div>
-                    <label>First Name:
+                    <label className="label">First Name:
                         <input
                             value = {values.firstName}
                             onChange = {onChange}
                             name = 'firstName'
                             type = 'text' />
                     </label>
-                    <label>Last Name:
+                    <label className="label">Last Name:
                         <input
                             value = {values.lastName}
                             onChange = {onChange}
@@ -39,7 +39,7 @@ function PizzaOrder(props) {
                     </label>
                 </div>
                 <div>
-                    <label>Choose your crust:
+                    <label className="label">Choose your crust:
                         <select
                         onChange = {onChange}
                         value = {values.crust}
@@ -52,7 +52,7 @@ function PizzaOrder(props) {
                         </select>
                     </label>
                 </div>
-                <label>Choose your toppings:
+                <label className="label">Choose your toppings:
                     <label>Pepperoni
                         <input
                             name = 'pepperoni'
@@ -83,7 +83,7 @@ function PizzaOrder(props) {
                     </label>
                 </label>
                 <div>
-                    <label>Special Instructions:
+                    <label className="label">Special Instructions:
                         <input
                             name = 'special'
                             type = 'text'

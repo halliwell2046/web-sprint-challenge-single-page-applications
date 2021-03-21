@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Pizza from './Pizza';
+import Help from './Help'
 import * as yup from 'yup'
 import axios from 'axios'
 import { Route, Link, BrowserRouter, useHistory } from 'react-router-dom'
@@ -98,6 +99,7 @@ function App() {
     <div className = 'App'>
       <nav className = 'App-link'>
         <Link to = '/'>Home</Link>
+        <br></br>
         <Link to = '/help'>Help</Link>
       </nav>
       
@@ -111,6 +113,9 @@ function App() {
         disabled={disabled} />
       </Route>
       <Route path = '/'>
+        <Home/>
+      </Route>
+      <Route path = '/help'>
         <Home/>
       </Route>
     </div>
